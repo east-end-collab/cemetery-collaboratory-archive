@@ -7,40 +7,51 @@
   font-weight: 400;
   src: url('../fonts/lato-v17-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Lato Regular'), local('Lato-Regular'),
-       url('../fonts/lato-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lato-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lato-v17-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+    url('../fonts/lato-v17-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/lato-v17-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/lato-v17-latin-regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/lato-v17-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/lato-v17-latin-regular.svg#Lato')
+      format('svg'); /* Legacy iOS */
 }
 
+/* adding lato-regular - latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/lora/Lora-VariableFont_wght.ttf');
+}
 
 // Define defaults for each variable.
 
 //$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-family: "Lato", sans-serif;
-$base-font-size:   16px !default;
+$base-font-family: 'Lato', sans-serif;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
-$text-color:       #EFEEEB !default;
-$background-color: #111213 !default;
-$brand-color:      rgb(79, 144, 151) !default;
+$text-color: #25291cfa !default;
+$background-color: #f9f9f9 !default;
+$brand-color: rgb(0, 0, 0) !default;
 
-$grey-color:       #828282 !default;
+$grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$sm:  576px   !default;
-$md:  768px   !default;
-$lg:  992px   !default;
-$xl:  1200px  !default;
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
 
 // Use media queries like this:
 @mixin media-query($sm) {
@@ -60,13 +71,6 @@ $xl:  1200px  !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting",
-  "minima/search",
-  "minima/pagination",
-  "minima/result-card",
-  "minima/person",
-  "minima/content-page"
-;
+@import 'minima/base', 'minima/layout', 'minima/syntax-highlighting',
+  'minima/search', 'minima/pagination', 'minima/result-card', 'minima/person',
+  'minima/content-page';

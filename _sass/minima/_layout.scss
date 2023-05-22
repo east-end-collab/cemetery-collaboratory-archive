@@ -2,40 +2,43 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   background-color: inherit;
-  @media (min-width: $md) {
-    padding: $spacing-unit / 2 $spacing-unit * 2.5;
-  }
 
-  .nav-item{
-    .nav-link{
+  .nav-item {
+    .nav-link {
       font-size: 1.25rem;
-      padding: .15rem .5rem .15rem .5rem;
+      padding: 0.15rem 0.5rem 0.15rem 0.5rem;
       margin-right: 10px;
       &:hover {
         text-decoration: underline;
       }
     }
   }
-  .site-logo{
+  .site-logo {
     width: 10rem;
   }
-  #search-nav-item{
-    .nav-link{
+  #search-nav-item {
+    .nav-link {
       font-weight: bold;
       color: $brand-color;
       margin-left: 1rem;
-      &.active{
-        color: white;
+      &.active {
+        color: black;
       }
     }
   }
-  
 }
 
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+  padding-bottom: 5px;
+}
 
+header {
+  border-bottom: 3px solid $grey-color-light;
+}
 
 /**
  * Site footer
@@ -43,7 +46,7 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  .flex-footer{
+  .flex-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,17 +54,17 @@
       @include relative-font-size(1.125);
       margin-bottom: $spacing-unit / 2;
     }
-    .logos-container{
+    .logos-container {
       width: 50%;
       display: flex;
       justify-content: space-around;
-      #foee-logo{
+      #foee-logo {
         width: 7rem;
       }
-      #ur-logo{
+      #ur-logo {
         width: 5rem;
       }
-      #vcu-logo{
+      #vcu-logo {
         width: 9rem;
       }
     }
@@ -79,9 +82,9 @@
 .page-heading {
   @include relative-font-size(2);
 }
-.latest-news-include{
+.latest-news-include {
   margin: $spacing-unit 0;
-  .top-news-heading{
+  .top-news-heading {
     font-weight: bold;
     text-decoration: underline;
   }
@@ -109,8 +112,6 @@
   @include relative-font-size(1.5);
 }
 
-
-
 /**
  * Posts
  */
@@ -132,10 +133,10 @@
   margin-bottom: $spacing-unit;
   img {
     border: 1px solid white;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     display: block;
     margin: 2rem 1px;
-}
+  }
   h2 {
     @include relative-font-size(2);
 
