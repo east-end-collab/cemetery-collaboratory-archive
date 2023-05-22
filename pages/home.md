@@ -1,6 +1,6 @@
 ---
 layout: page
-title: East End Cemetery Archive
+title: Home
 permalink: /
 ---
 ##### Welcome to the **East End Cemetery Archive**, a searchable repository of records and research related to East End Cemetery located in the City of Richmond and Henrico County, Virginia.
