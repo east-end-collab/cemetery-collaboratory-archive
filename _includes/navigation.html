@@ -22,7 +22,7 @@
             {% else %}
             class="nav-link"
           {% endif %}
-          href="{{ item.url }}"
+          href="{{ site.baseurl }}{{ item.url }}"
         >
           {{ item.text }}
           {% if item.url == "/search" %}
