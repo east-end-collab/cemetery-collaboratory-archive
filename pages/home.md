@@ -7,4 +7,4 @@ permalink: /
 
 #### **[SEARCH THE ARCHIVE >>](/search)**
 
-![East End Cemetery. Photograph: Brian Palmer](/images/uploads/banner.jpg)
+![East End Cemetery. Photograph: Brian Palmer](./assets/images/uploads/banner.jpg)
