@@ -314,7 +314,7 @@ var Search = function (_React$Component) {
                       React.createElement(
                         'span',
                         { className: 'pr-2' },
-                        valueB.key
+                        valueB.key ? valueB.key : "Unknown"
                       ),
                       React.createElement(
                         'span',
