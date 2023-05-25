@@ -51,8 +51,11 @@
             input {
                 display: none;
             }
+            .facet{
+                border: solid 1px black;
+            }
             .selected{
-                background-color: rgb(79, 144, 151);
+                background-color: $brand-color;
             }  
         }
         .filter-header{
@@ -78,13 +81,11 @@
                 display: block;
             }
             margin-bottom: $spacing-unit;
-            h5{
-                color: rgb(79, 144, 151);
-            }
             .facet-grouping {
                 display: flex;
                 flex-wrap: wrap;
                 .facet{
+                    border: solid 1px black;
                     max-width: 50%;
                     font-size: .8rem;
                     text-align: left;
@@ -93,7 +94,7 @@
                     }
                 }
                 .facet.selected{
-                    background-color: rgb(79, 144, 151);
+                    background-color: $brand-color;
                 }
 
             }
