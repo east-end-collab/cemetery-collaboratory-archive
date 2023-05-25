@@ -122,28 +122,12 @@ h6 {
  * Links
  */
 a {
-  color: $brand-color;
-  text-decoration: none;
+  text-decoration: underline;
+  color: black;
 
   &:hover {
-    color: $text-color;
     text-decoration: underline;
-  }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
-}
-
-.contact-form {
-  margin-bottom: $spacing-unit;
-  button {
-    background-color: $brand-color;
-    font-weight: bold;
+    color: black;
   }
 }
 

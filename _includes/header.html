@@ -1,3 +1,24 @@
 <header>
-  <nav>{% include navigation.html navigation=site.data.navigation %}</nav>
+  <nav class="navbar navbar-expand-lg navbar-light site-header">
+    <a class="site-title" href="{{ site.url}}">
+      <h1>Cemetery Collaboratory Archive</h1>
+    </a>
+  
+    {% assign navurl = page.url | remove: 'index.html' %}
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-right">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}#about">
+            About
+          </a>
+        </li>
+        <li class="nav-item" id="search-nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/search">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
