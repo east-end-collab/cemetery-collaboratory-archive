@@ -299,8 +299,9 @@ var Search = function (_React$Component) {
                   { className: 'facet-grouping' },
                   Object.entries(value.buckets).map(function (_ref3) {
                     var _ref4 = _slicedToArray(_ref3, 2),
-                        keyB = _ref4[0],
                         valueB = _ref4[1];
+
+                    if (valueB.key == "") return
 
                     var isChecked = _this2.state.filters[value.name].indexOf(valueB.key) > -1 || false;
 
@@ -314,7 +315,7 @@ var Search = function (_React$Component) {
                       React.createElement(
                         'span',
                         { className: 'pr-2' },
-                        valueB.key ? valueB.key : "Unknown"
+                        valueB.key
                       ),
                       React.createElement(
                         'span',
