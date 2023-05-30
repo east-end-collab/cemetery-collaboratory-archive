@@ -1,3 +1,5 @@
+# Updating home page text
+To update the home page text, simply edit the text in [home.md](pages/home.md) and commit changes. It uses markdown for styling ([Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)).
 # Steps to Update the Records Data
 
 1. Export all records from JSTOR Forum as Excel (`.xls`) file
