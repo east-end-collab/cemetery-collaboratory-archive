@@ -4,14 +4,14 @@ title: Home
 permalink: /
 ---
 
-<img class="banner" src="./assets/img/banner.jpg" alt="Application for veteran headstone dated 1918 for Noah Braxton of Richmond, VA">
+<img class="banner" src="{{site.url}}/assets/img/banner.jpg" alt="Application for veteran headstone dated 1918 for Noah Braxton of Richmond, VA">
 
 Welcome to the Cemetery Collaboratory Archive, a searchable repository of records and research related to historic African American burial grounds in Henrico County and the city of Richmond, Virginia.
 
 <br/>
-<a class="search-button" href="./search">
+<a class="search-button" href="{{site.url}}/search">
 Search Archive 
-<img class="search-icon" src="./assets/img/search.png">
+<img class="search-icon" src="{{site.url}}/assets/img/search.png">
 </a>
 <br/>
 

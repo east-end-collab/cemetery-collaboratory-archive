@@ -48,7 +48,7 @@ const Pagination = (props) => {
                             style={isFirstPage ? {color: 'lightgray'} : {color: 'black'}}
                             onClick={() => handleSetPageButton(1)}
                         >
-                            <i className="fas fa-fast-backward"></i>
+                            first 
                         </button>  
                         <button  
                             className="btn btn-light border-dark"
@@ -56,7 +56,7 @@ const Pagination = (props) => {
                             style={isFirstPage ? {color: 'lightgray'} : {color: 'black'}}
                             onClick={() => handleSetPageButton(currentPage - 1)}
                         >
-                            <i className="fas fa-step-backward"></i>
+                             &larr; prev
                         </button>
                   
                     </div>
@@ -79,7 +79,7 @@ const Pagination = (props) => {
                             style={isLastPage ? {color: 'lightgray'} : {color: 'black'}}
                             onClick={() => handleSetPageButton(currentPage + 1)}
                         >
-                            <i className="fas fa-step-forward"></i>
+                            next &rarr;
                         </button>
                         <button  
                             className="btn btn-light border-dark"
@@ -87,7 +87,7 @@ const Pagination = (props) => {
                             style={isLastPage ? {color: 'lightgray'} : {color: 'black'}}
                             onClick={() => handleSetPageButton(totalPageNumber)}
                         >
-                            <i className="fas fa-fast-forward"></i>
+                            last
                         </button>
                     </div>
                 </div>

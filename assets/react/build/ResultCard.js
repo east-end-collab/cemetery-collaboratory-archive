@@ -22,7 +22,8 @@ var ResultCard = function ResultCard(props) {
     var isUnknown = function isUnknown(field) {
         return field === '' || field.toLowerCase() === 'unknown';
     };
-    var baseUrl = "https://east-end-collab.github.io/cemetery-collaboratory-archive";
+    var protocol = window.location.protocol;
+    var host = window.location.host;
     var firstName = isUnknown(First_Name) ? React.createElement(Unknown, null) : First_Name;
     var lastName = isUnknown(Last_Name) ? React.createElement(Unknown, null) : Last_Name;
     var birthYear = isUnknown(Birth_Year) ? React.createElement(Unknown, null) : Birth_Year;
@@ -31,7 +32,7 @@ var ResultCard = function ResultCard(props) {
     return React.createElement(
         'div',
         { className: 'row rounded-lg mb-4 shadow-lg p-4 result-card' },
-        React.createElement('a', { href: baseUrl + '/people/' + SSID, className: 'card-link' }),
+        React.createElement('a', { href: protocol + '//' + host + '/people/' + SSID, className: 'card-link' }),
         Media_URL && React.createElement(
             'div',
             { className: 'portrait-container' },

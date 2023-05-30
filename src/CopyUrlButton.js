@@ -22,12 +22,10 @@ const CopyUrlButton = () => {
             
             {recentlyClicked ?
                 <div>
-                    <i className="fas fa-check mr-1"></i> 
                     <span>Copied URL to Clipboard!</span>
                 </div>
                 :
                 <div>
-                    <i className="fas fa-copy mr-1"></i> 
                     <span>Share Your Search</span>
                 </div>
             }

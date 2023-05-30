@@ -68,13 +68,13 @@ layout: default
         {% if page.FindGraveURL != '' or page.Map_URL != '' or page.EastEndCemeteryRVA_URL != '' %}
         <div class="link-container">
             {% if page.FindGraveURL != '' %}
-            <a class="btn btn-light" href="{{page.FindGraveURL}}" target="_blank">Findagrave.com<i class="fas fa-external-link-alt ml-2"></i></a>
+            <a class="btn btn-light border-dark" href="{{page.FindGraveURL}}" target="_blank">Findagrave.com</a>
             {% endif %}
             {% if page.Map_URL != '' %}
-            <a class="btn btn-light" href="{{page.Map_URL}}" target="_blank">Cemetery Map<i class="fas fa-external-link-alt ml-2"></i></a>
+            <a class="btn btn-light border-dark" href="{{page.Map_URL}}" target="_blank">Cemetery Map</a>
             {% endif %}
             {% if page.EastEndCemeteryRVA_URL != '' %}
-            <a class="btn btn-light" href="{{page.EastEndCemeteryRVA_URL}}" target="_blank">EastEndCemeteryRVA Profile<i class="fas fa-external-link-alt ml-2"></i></a>
+            <a class="btn btn-light border-dark" href="{{page.EastEndCemeteryRVA_URL}}" target="_blank">EastEndCemeteryRVA Profile</a>
             {% endif %}
         </div>    
         {% endif %}

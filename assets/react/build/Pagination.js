@@ -60,7 +60,7 @@ var Pagination = function Pagination(props) {
                         return handleSetPageButton(1);
                     }
                 },
-                React.createElement('i', { className: 'fas fa-fast-backward' })
+                'first'
             ),
             React.createElement(
                 'button',
@@ -72,7 +72,7 @@ var Pagination = function Pagination(props) {
                         return handleSetPageButton(currentPage - 1);
                     }
                 },
-                React.createElement('i', { className: 'fas fa-step-backward' })
+                '\u2190 prev'
             )
         ),
         React.createElement(
@@ -109,7 +109,7 @@ var Pagination = function Pagination(props) {
                         return handleSetPageButton(currentPage + 1);
                     }
                 },
-                React.createElement('i', { className: 'fas fa-step-forward' })
+                'next \u2192'
             ),
             React.createElement(
                 'button',
@@ -121,7 +121,7 @@ var Pagination = function Pagination(props) {
                         return handleSetPageButton(totalPageNumber);
                     }
                 },
-                React.createElement('i', { className: 'fas fa-fast-forward' })
+                'last'
             )
         )
     );

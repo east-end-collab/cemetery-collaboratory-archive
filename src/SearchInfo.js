@@ -7,7 +7,6 @@ const SearchInfo = () => {
         <div id="search-info-container">
             <a data-toggle="collapse" href="#collapseInfo" role="button" onClick={handleClick}>
                 <span className="search-info-link">What can you search by? </span>
-                {isCollapsed ? <i className="fas fa-chevron-left"></i> : <i className="fas fa-chevron-down"></i>}
             </a>
             <div className="collapse" id="collapseInfo">
                 <div className="card card-body text-white bg-dark">

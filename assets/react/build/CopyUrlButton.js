@@ -31,7 +31,6 @@ var CopyUrlButton = function CopyUrlButton() {
         recentlyClicked ? React.createElement(
             'div',
             null,
-            React.createElement('i', { className: 'fas fa-check mr-1' }),
             React.createElement(
                 'span',
                 null,
@@ -40,7 +39,6 @@ var CopyUrlButton = function CopyUrlButton() {
         ) : React.createElement(
             'div',
             null,
-            React.createElement('i', { className: 'fas fa-copy mr-1' }),
             React.createElement(
                 'span',
                 null,

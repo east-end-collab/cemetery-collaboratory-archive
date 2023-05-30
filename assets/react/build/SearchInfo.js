@@ -19,8 +19,7 @@ var SearchInfo = function SearchInfo() {
                 "span",
                 { className: "search-info-link" },
                 "What can you search by? "
-            ),
-            isCollapsed ? React.createElement("i", { className: "fas fa-chevron-left" }) : React.createElement("i", { className: "fas fa-chevron-down" })
+            )
         ),
         React.createElement(
             "div",
