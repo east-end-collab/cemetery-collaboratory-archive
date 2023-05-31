@@ -303,6 +303,7 @@ var Search = function (_React$Component) {
                         valueB = _ref4[1];
 
                     var isChecked = _this2.state.filters[value.name].indexOf(valueB.key) > -1 || false;
+                    if (valueB.doc_count < 1 || valueB.key == "") return;
 
                     return React.createElement(
                       'label',

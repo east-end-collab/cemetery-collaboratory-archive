@@ -308,6 +308,7 @@ class Search extends React.Component {
                           {
                             Object.entries(value.buckets).map(([keyB, valueB]) => {
                               let isChecked = this.state.filters[value.name].indexOf(valueB.key)>-1 || false
+                              if (valueB.doc_count < 1 || valueB.key=="") return
                               
                               return (
                                 <label key={valueB.key} className={`${isChecked ? 'selected' : 'btn-light'} btn m-1 facet`}>
