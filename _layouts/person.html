@@ -11,22 +11,34 @@ layout: default
   }}
 </h1>
 
-{% if page.FindGraveURL != '' and page.Map_URL != '' %}
-<p>
-  <a href="{{page.FindGraveURL}}">Find a Grave</a> |
-  <a href="{{page.Map_URL}}">Map</a>
-</p>
-{% elsif page.FindGraveURL != '' %}
-<p>
-  <a href="{{page.FindGraveURL}}" target="_blank" rel="noopener noreferrer"
+<div class="d-flex mb-3">
+  {% if page.FindGraveURL != '' %}
+  <a
+    class="mr-2"
+    href="{{page.FindGraveURL}}"
+    target="_blank"
+    rel="noopener noreferrer"
     >Find a Grave</a
   >
-</p>
-{% elsif page.Map_URL != '' %}
-<p>
-  <a href="{{page.Map_URL}}" target="_blank" rel="noopener noreferrer">Map</a>
-</p>
-{% endif %} {% if page.Birth_Date != '' %}
+  {% endif %} {% if page.Map_URL != '' %}
+  <a
+    class="mr-2"
+    href="{{page.Map_URL}}"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Map</a
+  >
+  {% endif %} {% if page.EastEndCemeteryRVA_URL != '' %}
+  <a
+    href="{{page.EastEndCemeteryRVA_URL}}"
+    target="_blank"
+    rel="noopener noreferrer"
+    >East End Cemetery</a
+  >
+  {% endif %}
+</div>
+
+{% if page.Birth_Date != '' %}
 <p><span class="key">Date of birth:</span> {{ page.Birth_Date }}</p>
 {% endif %} {% if page.Birth_Location != '' %}
 <p><span class="key">Place of birth:</span> {{ page.Birth_Location }}</p>
@@ -102,12 +114,15 @@ page.Church_affiliation != '' or page.School != '' %}
 {% endif %} {% if page.Plantation != '' %}
 <h3>Enslavement</h3>
 <p><span class="key">Plantation:</span> {{ page.Plantation }}</p>
-{% endif %} {% if page.Funeral_Home != '' or page.Burial_Date != '' %}
+{% endif %} {% if page.Funeral_Home != '' or page.Burial_Date != '' or
+page.Cemetery_Name != '' %}
 <h3>Burial Information</h3>
 {% if page.Funeral_Home != '' %}
 <p><span class="key">Funeral home:</span> {{ page.Funeral_Home }}</p>
 {% endif %} {% if page.Burial_Date != '' %}
 <p><span class="key">Date of burial:</span> {{ page.Burial_Date }}</p>
+{% endif %} {% if page.Cemetery_Name != '' %}
+<p><span class="key">Cemetery:</span> {{ page.Cemetery_Name }}</p>
 {% endif %} {% endif %} {% if page.Notes_and_Clarifications != '' %}
 <h3>Notes and Clarifications</h3>
 <p>{{ page.Notes_and_Clarifications }}</p>

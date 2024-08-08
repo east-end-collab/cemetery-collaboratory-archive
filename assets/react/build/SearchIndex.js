@@ -198,7 +198,7 @@ var Search = function (_React$Component) {
             ),
             React.createElement(
               'div',
-              { className: 'search-field-section' },
+              { className: 'search-field-section d-flex flex-wrap' },
               React.createElement(
                 'form',
                 { onSubmit: this.submitHandler, className: 'navbar-form navbar-left' },

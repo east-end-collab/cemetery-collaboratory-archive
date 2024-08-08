@@ -24,7 +24,7 @@ var CopyUrlButton = function CopyUrlButton() {
         'button',
         {
             type: 'button',
-            className: 'btn btn-light copy-url-button',
+            className: 'btn btn-light border-dark copy-url-button',
             onClick: handleCopyUrl,
             disabled: recentlyClicked
         },
@@ -42,7 +42,7 @@ var CopyUrlButton = function CopyUrlButton() {
             React.createElement(
                 'span',
                 null,
-                'Share Your Search'
+                'Share Search'
             )
         )
     );
